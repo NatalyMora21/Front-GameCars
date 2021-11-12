@@ -30,21 +30,18 @@ const FormUser = () => {
 
             const { target } = event;
             const user = {
-                nameUser: target.name.value,
-                car: carselected,
-                avatar: avatarselected
+                userName: target.name.value,
+                carBrand: carselected,
+                avatar: avatarselected,
+                progress:0
+
             }
             dispatch(createUser(user));
     
             setCarselected("");
             setAvatarselected("");
           
-
-
         }
-
-
-
 
     }
 

@@ -3,15 +3,16 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const ListUserRace = () => {
 
+
     const dispatch = useDispatch();
     const state = useSelector(state => state.users)
 
     const [users, setUser] = useState([]);
 
     useEffect(() => {
-        console.log("cambio")
+
         setUser(state);
-        console.log(users)
+
 
     }, [state])
 
@@ -22,13 +23,13 @@ const ListUserRace = () => {
         <>
             <h4>Players</h4>
             {
-                users.map(note => {
+                users.map(user => {
                     return (
                         <div className="d-flex align-items-center player">
-                            <img src={`/images/${note.avatar}`} className="list-players"></img>
+                            <img src={`/images/${user.avatar}`} className="list-players"></img>
                             <img className="online" src="/images/online.jpg"></img>
                   
-                            <p>{note.nameUser}</p>
+                            <p>{user.userName}</p>
 
                             
                      

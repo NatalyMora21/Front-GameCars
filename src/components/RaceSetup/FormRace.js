@@ -29,7 +29,7 @@ const FormRace = () => {
         const { target } = event;
         const race = {
             title: target.title.value,
-            track: target.track.value,
+            trackDistance: target.track.value,
             users: state
         }
         dispatch(createRace(race));

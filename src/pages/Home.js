@@ -3,10 +3,13 @@
 import FormRace from "../components/RaceSetup/FormRace";
 import FormUser from "../components/RaceSetup/FormUser";
 import ListUserRace from "../components/RaceSetup/ListUserRace";
-
+import StartGame from "../components/RaceStart/StartGame";
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const Home = () => {
+
+    const state = useSelector(state => state.race);
 
 
     return (
@@ -22,6 +25,9 @@ const Home = () => {
                     <ListUserRace></ListUserRace>
                 </div>
 
+                {state.length>0 &&<StartGame/> }
+
+                
             </div>
 
         </>

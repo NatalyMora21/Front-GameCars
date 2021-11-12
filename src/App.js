@@ -1,8 +1,9 @@
 
 import './App.css';
-import FormRace from './components/RaceSetup/FormRace';
-import ListsRacing from './components/RacingHistory/ListsRacing';
+
+import StartGame from './components/RaceStart/StartGame';
 import Home from './pages/Home'
+
 
 function App() {
 
@@ -13,6 +14,9 @@ function App() {
         <main>
 
           <Home />
+          
+
+
         </main>
       </div>
     </>

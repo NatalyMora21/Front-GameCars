@@ -63,3 +63,12 @@ button {
 .container{
   margin-top: 40px;
 }
+
+.progress {
+  margin-top: 10px;
+}
+
+.game-over{
+  width: 200px;
+  height: 120px;
+}
